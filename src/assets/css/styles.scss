@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "_bootstrap.scss";
+@import "_colors.scss";
+@import "_base.scss";
+
+@import "../../components/home/_styles.scss";
+@import "../../components/shapes/_styles.scss";
