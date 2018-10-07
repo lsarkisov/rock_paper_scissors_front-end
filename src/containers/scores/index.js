@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import Score from '../../components/score';
+import Scores from '../../components/scores';
 
 const mapStateToProps = (state) => {
-  const { shape } = state;
-  return { shape };
+  const { user, computer, win } = state.shape;
+  return { user, computer, win };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Score);
+)(Scores);

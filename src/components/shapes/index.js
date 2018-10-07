@@ -14,9 +14,10 @@ class Shapes extends Component {
     }],
   }
 
-  onShapeSelection = (rps) => {
+  onShapeSelection = (e, user) => {
+    e.stopPropagation();
     const { onShapeSelection } = this.props;
-    onShapeSelection({ rps });
+    onShapeSelection({ user });
   }
 
   render() {
@@ -27,11 +28,12 @@ class Shapes extends Component {
         {
           data.map((item, i) => {
             return (
-              <div className='col' key={ i }>
-                <dl className='card'
-                  id={item.title}
-                  onClick={() => this.onShapeSelection(i)}
-                >
+              <div
+                key={ i }
+                className='col'
+                onClick={(e) => this.onShapeSelection(e, i)}
+              >
+                <dl className='card'>
                   <dt>{ item.title }</dt>
                   <dd className={`fa ${item.icon}`} aria-hidden='true' />
                 </dl>

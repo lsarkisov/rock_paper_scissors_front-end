@@ -10,9 +10,10 @@ export const onUserSelection = (shape) => {
   };
 };
 
-export const onComputerSelection = (shape) => {
+export const onComputerSelection = (response) => {
+  const { user, computer, win } = response;
   return {
     type: ON_COMPUTER_SELECTION,
-    shape
+    user, computer, win
   };
 };

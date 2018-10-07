@@ -64,7 +64,7 @@
   },
   "proxy": "http://localhost:8080",
   "permissions": {
-    "systemXHR" : {}
+    "systemXHR": {}
   },
   "eslintConfig": {
     "extends": "react-app"

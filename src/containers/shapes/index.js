@@ -3,8 +3,10 @@ import Shapes from '../../components/shapes';
 import { onUserSelection } from '../../actions/shapes';
 
 const mapStateToProps = (state) => {
-  const { shape } = state;
-  return { shape };
+  const { userSelection } = state.shape;
+  return {
+    userSelection,
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {

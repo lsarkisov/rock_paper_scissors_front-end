@@ -2,7 +2,6 @@ import { API_SHAPE_URL } from '../../const';
 import { onComputerSelection } from '../../actions/shapes';
 
 export const onShapeSelection = (action, next) => {
-    console.log('Request...', action.shape, API_SHAPE_URL)
     fetch(API_SHAPE_URL, {
         method: 'POST',
         headers: {
@@ -13,7 +12,10 @@ export const onShapeSelection = (action, next) => {
         body: JSON.stringify(action.shape),
     })
     .then(shape => shape.json())
-    .then(shape => next(onComputerSelection({
-        shape,
-    })));
+    .then(shape => {
+        const { user, computer, win } = shape;
+        next(onComputerSelection({
+            user, computer, win
+        }))
+    });
 };

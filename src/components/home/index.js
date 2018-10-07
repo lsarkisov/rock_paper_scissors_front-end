@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Shapes from '../../containers/shapes';
-import Score from '../../containers/score';
+import Scores from '../../containers/scores';
 
 const Home = () => (
   <div className='container home'>
@@ -10,7 +9,7 @@ const Home = () => (
     </h1>
     <div className='row'>
       <Shapes />
-      <Score />
+      <Scores />
     </div>
   </div>
 );
