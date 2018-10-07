@@ -82,11 +82,7 @@ module.exports = function(proxy, allowedHost) {
       disableDotRule: true,
     },
     public: allowedHost,
-    proxy: {
-      '/api/v1': {
-        target: 'http://localhost:8080',
-      },
-    },
+    proxy,
     before(app, server) {
       if (fs.existsSync(paths.proxySetup)) {
         // This registers user provided middleware for proxy reasons
