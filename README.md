@@ -23,12 +23,7 @@
     npm start
     ```
     The project will open on [http://localhost:3000/](http://localhost:3000/)
-
-4. **Demo.**
-
-    If you want to see result, please visit
-
-    [http://localhost:3000/](http://localhost:3000/)    
+   
 
 ## 🙈 Crucial files?
 
