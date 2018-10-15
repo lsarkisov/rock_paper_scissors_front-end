@@ -22,7 +22,7 @@
     npm i
     npm start
     ```
-    The project will open on [https://gatsby-wp.herokuapp.com](https://gatsby-wp.herokuapp.com)
+    The project will open on [http://localhost:3000/](http://localhost:3000/)
 
 4. **Demo.**
 
