@@ -1,5 +1,5 @@
 <h1 align="center">
-  Rock Paper Scessors
+  Rock Paper Scessors (front-end)
 </h1>
 
 
